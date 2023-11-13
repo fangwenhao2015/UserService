@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UserService.Data\UserService.Data.csproj" />
+    <ProjectReference Include="..\UserService.Services\UserService.Services.csproj" />
+  </ItemGroup>
+
 </Project>
