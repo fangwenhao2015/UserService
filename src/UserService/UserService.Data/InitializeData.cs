@@ -24,6 +24,17 @@ namespace UserService.Data
             db.SaveChanges();
         }
 
+
+        /// <summary>
+        /// 创建一个默认的Administrator用户，没有初始密码
+        /// </summary>
+        public static void UserInit()
+        {
+
+
+        }
+
+
         //清理全库
         public static void ClearFull(this DbContext db)
         {

@@ -12,9 +12,12 @@ using UserService.Data.Entities;
 namespace UserService.Entities
 {
     //风格。
-     public abstract class SequenceEntityBase : EntityBase
+     public abstract class SequenceEntityBase 
     {
         [Key]
         long  Id { get; set; }
+
+        DateTime TimeStamp { get; set; }
+
     }
 }

@@ -7,6 +7,11 @@ builder.Services.AddSqlServer<UserServiceContext>(builder.Configuration.GetConne
 
 var app = builder.Build();
 
-app.MapGet("/", () => "Hello World!");
+app.MapGet("/", (UserServiceContext db) => {
+
+    db.Database.EnsureCreated();
+    return "Hello World!";
+    
+    });
 
 app.Run();

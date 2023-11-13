@@ -6,12 +6,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using UserService.Data.Entities;
+using UserService.Entities;
 
 namespace UserService.Data
 {
     public class UserServiceContext : DbContext
     {
-        static Type entityBase = typeof(EntityBase);
+        static Type entityBase = typeof(UniqueEntityBase);
 
         public UserServiceContext(DbContextOptions<UserServiceContext> options) : base(options)
         {
@@ -34,7 +35,7 @@ namespace UserService.Data
                     modelBuilder.Entity(type);
                 }
             }
-            modelBuilder.Entity<EntityBase>().UseTpcMappingStrategy();
+            modelBuilder.Entity<UniqueEntityBase>().UseTpcMappingStrategy();
            
         }
 

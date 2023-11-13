@@ -12,9 +12,12 @@ using UserService.Data.Entities;
 namespace UserService.Entities
 {
     //风格。
-    public abstract class UniqueEntityBase:EntityBase
+    public abstract class UniqueEntityBase
     {
         [Key]
         public Guid Id { get; set; }
+
+        DateTime TimeStamp { get; set; }
+
     }
 }

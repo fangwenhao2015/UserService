@@ -15,11 +15,13 @@ namespace UserService.Data.Entities.Identity
     public class UsAuthorize: UniqueEntityBase
     {
         public Guid UserId { get; set; }
+
         /// <summary>
         /// 第三方标识
         /// </summary>
         [Required]
         public string?  Identity{get; set;} 
+
 
         public DateTime AuthorizeDate { get; set; }
 
