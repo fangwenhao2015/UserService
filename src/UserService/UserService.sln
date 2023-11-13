@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService.Services", "Use
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "UserService.Protal.Web", "UserService.Protal.Web\UserService.Protal.Web.esproj", "{5FB45B8D-431C-49D7-B2D6-8E9CFC762824}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{2510EB37-EB7A-4245-B418-948FA720278E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behind", "Behind", "{2510EB37-EB7A-4245-B418-948FA720278E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protal", "Protal", "{19B3F436-5D11-4B5F-97F7-29A112297D24}"
 EndProject
