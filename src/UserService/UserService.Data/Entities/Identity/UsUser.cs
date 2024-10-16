@@ -11,6 +11,11 @@
     /// </summary>
     public class UsUser : UniqueEntityBase
     {
+        /// <summary>
+        /// 这个名称相当于显示给用户的标识，根据策略，可以存储用户Account.Name， 手机号，邮箱，第三方账号等。
+        /// </summary>
+
+        public string Name { get; set; }
 
         /// <summary>
         /// 显示名
